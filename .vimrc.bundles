@@ -86,14 +86,15 @@
             Bundle 'kien/ctrlp.vim'
             "Bundle 'vim-scripts/sessionman.vim'
             Bundle 'matchit.zip'
-            Bundle 'Lokaltog/vim-powerline'
+            "Bundle 'Lokaltog/vim-powerline'
             Bundle 'Lokaltog/vim-easymotion'
             "Bundle 'godlygeek/csapprox'
             Bundle 'jistr/vim-nerdtree-tabs'
             "Bundle 'flazz/vim-colorschemes'
             "Bundle 'mbbill/undotree'
             Bundle 'myusuf3/numbers.vim'
-            Bundle 'nathanaelkane/vim-indent-guides'
+            "Bundle 'nathanaelkane/vim-indent-guides'
+            Bundle 'Yggdroot/indentLine'
             if !exists('g:spf13_no_views')
                 Bundle 'vim-scripts/restore_view.vim'
             endif

@@ -591,6 +591,7 @@
             set guifont=Andale_Mono:h10,Menlo:h10,Consolas:h10,Courier_New:h10
         endif
         if has('gui_macvim')
+            set guifont=Menlo:h13
             set transparency=5      " Make the window slightly transparent
         endif
     else
