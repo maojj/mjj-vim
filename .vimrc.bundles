@@ -67,6 +67,7 @@
     " In your .vimrc.bundles.local file"
     " list only the plugin groups you will use
     if !exists('g:spf13_bundle_groups')
+        "let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'html', 'misc', 'scala']
         let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'html', 'misc', 'scala']
     endif
 
@@ -181,6 +182,7 @@
 
     " Misc
         if count(g:spf13_bundle_groups, 'misc')
+            Bundle 'FuDesign2008/PreviewMarkdown.vim'
             Bundle 'tpope/vim-markdown'
             Bundle 'spf13/vim-preview'
             Bundle 'tpope/vim-cucumber'
