@@ -101,7 +101,7 @@
             Bundle 'tpope/vim-abolish.git'
         endif
 
-        if cout(g:spf13_bundle_groups, 'color')
+        if count(g:spf13_bundle_groups, 'color')
              "light color schemes
             Bundle 'therubymug/vim-pyte'
             Bundle 'vim-scripts/summerfruit.vim'
