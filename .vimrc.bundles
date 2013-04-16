@@ -68,7 +68,7 @@
     " list only the plugin groups you will use
     if !exists('g:spf13_bundle_groups')
         "let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'html', 'misc', 'scala']
-        let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'html', 'misc', 'scala']
+        let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming',  'javascript', 'html', 'misc', 'color']
     endif
 
     " To override all the included bundles, put
@@ -80,18 +80,18 @@
         if count(g:spf13_bundle_groups, 'general')
             Bundle 'scrooloose/nerdtree'
             Bundle 'altercation/vim-colors-solarized'
-            Bundle 'spf13/vim-colors'
+            "Bundle 'spf13/vim-colors'
             Bundle 'tpope/vim-surround'
             Bundle 'spf13/vim-autoclose'
             Bundle 'kien/ctrlp.vim'
-            Bundle 'vim-scripts/sessionman.vim'
+            "Bundle 'vim-scripts/sessionman.vim'
             Bundle 'matchit.zip'
             Bundle 'Lokaltog/vim-powerline'
             Bundle 'Lokaltog/vim-easymotion'
-            Bundle 'godlygeek/csapprox'
+            "Bundle 'godlygeek/csapprox'
             Bundle 'jistr/vim-nerdtree-tabs'
-            Bundle 'flazz/vim-colorschemes'
-            Bundle 'mbbill/undotree'
+            "Bundle 'flazz/vim-colorschemes'
+            "Bundle 'mbbill/undotree'
             Bundle 'myusuf3/numbers.vim'
             Bundle 'nathanaelkane/vim-indent-guides'
             if !exists('g:spf13_no_views')
@@ -101,13 +101,40 @@
             Bundle 'tpope/vim-abolish.git'
         endif
 
+        if cout(g:spf13_bundle_groups, 'color')
+             "light color schemes
+            Bundle 'therubymug/vim-pyte'
+            Bundle 'vim-scripts/summerfruit.vim'
+            Bundle 'vim-scripts/autumnleaf_modified.vim'
+            Bundle 'FuDesign2008/ironman.vim'
+            Bundle 'FuDesign2008/proton.vim'
+            Bundle 'vim-scripts/mayansmoke'
+            "dark color schemes
+            Bundle 'FuDesign2008/codeschool.vim'
+            Bundle 'Lokaltog/vim-distinguished'
+            Bundle 'nanotech/jellybeans.vim'
+            Bundle 'jpo/vim-railscasts-theme'
+            Bundle 'matthewtodd/vim-twilight'
+            Bundle 'tpope/vim-vividchalk'
+            Bundle 'twerth/ir_black'
+            Bundle 'tomasr/molokai'
+            Bundle 'jnurmine/Zenburn'
+            Bundle 'vim-scripts/desert.vim'
+            Bundle 'briancarper/gentooish.vim'
+            Bundle 'cschlueter/vim-wombat'
+            Bundle 'jonathanfilip/vim-lucius'
+            Bundle 'altercation/vim-colors-solarized'
+            Bundle 'FuDesign2008/GoodColors.vim'
+            "color schemes end
+        endif 
+
     " General Programming
         if count(g:spf13_bundle_groups, 'programming')
             " Pick one of the checksyntax, jslint, or syntastic
-            Bundle 'scrooloose/syntastic'
-            Bundle 'tpope/vim-fugitive'
-            Bundle 'mattn/webapi-vim'
-            Bundle 'mattn/gist-vim'
+            "Bundle 'scrooloose/syntastic'
+            "Bundle 'tpope/vim-fugitive'
+            "Bundle 'mattn/webapi-vim'
+            "Bundle 'mattn/gist-vim'
             Bundle 'scrooloose/nerdcommenter'
             Bundle 'godlygeek/tabular'
             if executable('ctags')
