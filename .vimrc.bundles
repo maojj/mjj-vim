@@ -184,10 +184,10 @@
         if count(g:spf13_bundle_groups, 'misc')
             Bundle 'FuDesign2008/PreviewMarkdown.vim'
             Bundle 'tpope/vim-markdown'
-            Bundle 'spf13/vim-preview'
-            Bundle 'tpope/vim-cucumber'
-            Bundle 'quentindecock/vim-cucumber-align-pipes'
-            Bundle 'Puppet-Syntax-Highlighting'
+            "Bundle 'spf13/vim-preview'
+            "Bundle 'tpope/vim-cucumber'
+            "Bundle 'quentindecock/vim-cucumber-align-pipes'
+            "Bundle 'Puppet-Syntax-Highlighting'
         endif
 
 
