@@ -126,6 +126,10 @@
         let g:solarized_termtrans=1
         let g:solarized_contrast="high"
         let g:solarized_visibility="high"
+
+    "config which color schemes to random
+    let g:random_color_schemes = ['codeschool', 'ir_black', 'zenburn', 'wombat']
+
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode
 
@@ -568,7 +572,7 @@
     " }
     "
     " markdown {
-    autocmd BufNewFile,BufRead *.md set filetype=markdown
+    autocmd BufNewFile,BufRead *.md,*.markdown set filetype=markdown
     let g:markdown_preview_app = '/Applications/Mou.app'
     nnoremap  <leader>p :PreviewMarkdown<CR>
     "
