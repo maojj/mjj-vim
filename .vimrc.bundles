@@ -68,7 +68,7 @@
     " list only the plugin groups you will use
     if !exists('g:spf13_bundle_groups')
         "let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'html', 'misc', 'scala']
-        let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming',  'javascript', 'html', 'misc', 'color']
+        let g:spf13_bundle_groups=['general', 'programming',  'javascript', 'html', 'misc', 'color']
     endif
 
     " To override all the included bundles, put
@@ -86,6 +86,7 @@
             Bundle 'kien/ctrlp.vim'
             "Bundle 'vim-scripts/sessionman.vim'
             Bundle 'matchit.zip'
+            Bundle 'ervandew/supertab'
             "Bundle 'Lokaltog/vim-powerline'
             Bundle 'Lokaltog/vim-easymotion'
             "Bundle 'godlygeek/csapprox'
